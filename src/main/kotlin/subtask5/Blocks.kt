@@ -26,17 +26,3 @@ class Blocks {
         return sortedL.last().format(DateTimeFormatter.ofPattern("dd.MM.yyyy"))
     }
 }
-
-
-
-//
-//fun getData(blockA: Array<*>, blockB: KClass<*>): Any {
-//    val arr = blockA.toMutableList().filter { it!!::class == blockB }
-//    return when (blockB) {
-//        Int::class -> arr.sumBy { it.toString().toInt() }
-//        String::class -> arr.joinToString("")
-//        LocalDate::class -> arr.stream().map { it as LocalDate }.max(LocalDate::compareTo).get()
-//            .format(DateTimeFormatter.ofPattern("dd.MM.yyyy"))
-//        else -> ""
-//    }
-//}
